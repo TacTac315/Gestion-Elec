@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\vince\Documents\test_beleec\PMSM_TGN002_cde_Uf_etudiant"/>
+		<item value="C:\Users\vince\OneDrive\Office_ESPE\Safety_elec\Code"/>
+		<item value="C:\Users\vince\OneDrive\Office_ESPE\Safety_elec\Code\PMSM_TGN002_cde_Uf_etudiant"/>
+	</list>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="601" key="DIALOG_X_ORIGIN"/>
+		<item value="337" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

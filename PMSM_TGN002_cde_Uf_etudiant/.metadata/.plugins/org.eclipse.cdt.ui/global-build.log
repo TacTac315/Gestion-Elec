@@ -1,0 +1,332 @@
+15:26:19 **** Clean-only build of configuration Debug for project PMSM_TGN002_cde_Uf_etudiant ****
+make -j12 clean 
+rm -rf ./*
+ 
+15:26:20 **** Build of configuration Debug for project PMSM_TGN002_cde_Uf_etudiant ****
+make -j12 all 
+Building file: ../src/ClockConfig.c
+Building file: ../src/Cmd_moteur.c
+Building file: ../src/ConfigADC.c
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/ClockConfig.d" -MT"src/ClockConfig.o" -o "src/ClockConfig.o" "../src/ClockConfig.c"
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/Cmd_moteur.d" -MT"src/Cmd_moteur.o" -o "src/Cmd_moteur.o" "../src/Cmd_moteur.c"
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/ConfigADC.d" -MT"src/ConfigADC.o" -o "src/ConfigADC.o" "../src/ConfigADC.c"
+Building file: ../src/ConfigCTU.c
+Building file: ../src/ConfigGPIO.c
+Building file: ../src/ConfigPIT.c
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/ConfigCTU.d" -MT"src/ConfigCTU.o" -o "src/ConfigCTU.o" "../src/ConfigCTU.c"
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/ConfigGPIO.d" -MT"src/ConfigGPIO.o" -o "src/ConfigGPIO.o" "../src/ConfigGPIO.c"
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/ConfigPIT.d" -MT"src/ConfigPIT.o" -o "src/ConfigPIT.o" "../src/ConfigPIT.c"
+Building file: ../src/ConfigPWM.c
+../src/Cmd_moteur.c: In function 'Exec_Fast_Loop':
+../src/Cmd_moteur.c:232:7: warning: variable 'SVMSector' set but not used [-Wunused-but-set-variable]
+  tU32 SVMSector;
+       ^
+../src/Cmd_moteur.c: In function 'ADC0_EOC_FAST_LOOP_isr':
+../src/Cmd_moteur.c:452:10: warning: variable 'PhaseCurrentRead_OK' set but not used [-Wunused-but-set-variable]
+  uint8_t PhaseCurrentRead_OK;
+          ^
+Building file: ../src/Config_eDMA.c
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/ConfigPWM.d" -MT"src/ConfigPWM.o" -o "src/ConfigPWM.o" "../src/ConfigPWM.c"
+../src/ConfigADC.c:623:1: warning: "/*" within comment [-Wcomment]
+ /*****************************************************************************/
+ ^
+../src/ConfigADC.c:646:1: warning: "/*" within comment [-Wcomment]
+ /*****************************************************************************/
+Invoking: Standard S32DS C Compiler
+ ^
+../src/ConfigADC.c:665:1: warning: "/*" within comment [-Wcomment]
+ /*****************************************************************************/
+ ^
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/Config_eDMA.d" -MT"src/Config_eDMA.o" -o "src/Config_eDMA.o" "../src/Config_eDMA.c"
+Building file: ../src/Current_Sensor.c
+Invoking: Standard S32DS C Compiler
+../src/ConfigGPIO.c:17:1: warning: "/*" within comment [-Wcomment]
+ /*****************************************************************************/
+ ^
+../src/ConfigGPIO.c:25:1: warning: "/*" within comment [-Wcomment]
+ /*****************************************************************************/
+ ^
+../src/ConfigGPIO.c:45:1: warning: "/*" within comment [-Wcomment]
+ /* Voir table 4.7 p 107 ou 4.16 p 151 MPC5744PRM.pdf pour trouver le numéro du registre
+ ^
+../src/ConfigGPIO.c:63:1: warning: "/*" within comment [-Wcomment]
+ /* Voir chap 16 - SIUL2, p 497 MPC5744PRM.pdf pour config registre MSCR.
+ ^
+../src/ConfigGPIO.c:64:1: warning: "/*" within comment [-Wcomment]
+ /* Voir table 4.7 p 107 ou 4.16 p 151 MPC5744PRM.pdf pour trouver le numéro du registre
+ ^
+../src/ConfigGPIO.c:81:1: warning: "/*" within comment [-Wcomment]
+ /* Voir chap 16 - SIUL2, p 497 MPC5744PRM.pdf pour config registre MSCR.
+ ^
+../src/ConfigGPIO.c:82:1: warning: "/*" within comment [-Wcomment]
+ /* Voir table 4.7 p 107 ou 4.16 p 151 MPC5744PRM.pdf pour trouver le numéro du registre
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/Current_Sensor.d" -MT"src/Current_Sensor.o" -o "src/Current_Sensor.o" "../src/Current_Sensor.c"
+ ^
+Building file: ../src/DSPIConfig.c
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/DSPIConfig.d" -MT"src/DSPIConfig.o" -o "src/DSPIConfig.o" "../src/DSPIConfig.c"
+../src/ConfigPWM.c:31:1: warning: "/*" within comment [-Wcomment]
+Building file: ../src/MPC57xx__Interrupt_Init.c
+ /* Description: Configure les pads de sortie associées au module PWM0
+ ^
+../src/ConfigPWM.c:32:1: warning: "/*" within comment [-Wcomment]
+ /*****************************************************************************/
+ ^
+../src/ConfigPWM.c:246:1: warning: "/*" within comment [-Wcomment]
+ /*****************************************************************************/
+ ^
+../src/ConfigPWM.c:288:1: warning: "/*" within comment [-Wcomment]
+ /*****************************************************************************/
+ ^
+../src/ConfigPWM.c: In function 'Disable_OutputTrigger':
+../src/ConfigPWM.c:406:10: warning: unused variable 'OutTrigEn' [-Wunused-variable]
+  uint8_t OutTrigEn;
+          ^
+Invoking: Standard S32DS C Compiler
+Building file: ../src/ModeEntryAndConfig.c
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/MPC57xx__Interrupt_Init.d" -MT"src/MPC57xx__Interrupt_Init.o" -o "src/MPC57xx__Interrupt_Init.o" "../src/MPC57xx__Interrupt_Init.c"
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/ModeEntryAndConfig.d" -MT"src/ModeEntryAndConfig.o" -o "src/ModeEntryAndConfig.o" "../src/ModeEntryAndConfig.c"
+../src/Current_Sensor.c:254:1: warning: "/*" within comment [-Wcomment]
+ /* Deduce_Iphase_C_FLT                                                      */
+ ^
+../src/Current_Sensor.c:264:1: warning: "/*" within comment [-Wcomment]
+ /* Get_ThreePhase_MotorGD_FLT                                                      */
+ ^
+../src/Current_Sensor.c:272:1: warning: "/*" within comment [-Wcomment]
+ /*****************************************************************************/
+ ^
+../src/Current_Sensor.c:293:1: warning: "/*" within comment [-Wcomment]
+ /* Perform_Current_Meas_Calibration                                                       */
+ ^
+../src/Current_Sensor.c: In function 'Compensate_Iphase_MotorGD_FLT':
+../src/Current_Sensor.c:343:9: warning: unused variable 'Umeas_uV' [-Wunused-variable]
+  tFloat Umeas_uV;  //tensions acquises par l'ADC aux bornes des résistances de shunt pour la
+         ^
+Finished building: ../src/Cmd_moteur.c
+Finished building: ../src/ClockConfig.c
+Finished building: ../src/ConfigADC.c
+ 
+ 
+ 
+Finished building: ../src/ConfigCTU.c
+Finished building: ../src/MPC57xx__Interrupt_Init.c
+Finished building: ../src/ConfigGPIO.c
+ 
+Finished building: ../src/ModeEntryAndConfig.c
+ 
+ 
+ 
+Finished building: ../src/ConfigPWM.c
+Finished building: ../src/Config_eDMA.c
+Finished building: ../src/ConfigPIT.c
+ 
+ 
+ 
+Finished building: ../src/Current_Sensor.c
+Finished building: ../src/DSPIConfig.c
+Building file: ../src/UARTConfig.c
+ 
+ 
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/UARTConfig.d" -MT"src/UARTConfig.o" -o "src/UARTConfig.o" "../src/UARTConfig.c"
+Building file: ../src/User_Interface.c
+Building file: ../src/Vector.c
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/User_Interface.d" -MT"src/User_Interface.o" -o "src/User_Interface.o" "../src/User_Interface.c"
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/Vector.d" -MT"src/Vector.o" -o "src/Vector.o" "../src/Vector.c"
+Building file: ../src/eTimer.c
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/eTimer.d" -MT"src/eTimer.o" -o "src/eTimer.o" "../src/eTimer.c"
+Building file: ../src/flashrchw.c
+Building file: ../src/gd3000.c
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/flashrchw.d" -MT"src/flashrchw.o" -o "src/flashrchw.o" "../src/flashrchw.c"
+Building file: ../src/intc_SW_mode_isr_vectors_MPC5744P.c
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/gd3000.d" -MT"src/gd3000.o" -o "src/gd3000.o" "../src/gd3000.c"
+../src/UARTConfig.c:21:1: warning: "/*" within comment [-Wcomment]
+ /*****************************************************************************/
+ ^
+../src/UARTConfig.c:35:1: warning: "/*" within comment [-Wcomment]
+ /*****************************************************************************/
+ ^
+../src/UARTConfig.c:50:1: warning: "/*" within comment [-Wcomment]
+Invoking: Standard S32DS C Compiler
+ /*****************************************************************************/
+ ^
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/intc_SW_mode_isr_vectors_MPC5744P.d" -MT"src/intc_SW_mode_isr_vectors_MPC5744P.o" -o "src/intc_SW_mode_isr_vectors_MPC5744P.o" "../src/intc_SW_mode_isr_vectors_MPC5744P.c"
+Building file: ../src/intc_sw_handlers.S
+Finished building: ../src/Vector.c
+Invoking: Standard S32DS Assembler
+../src/eTimer.c: In function 'EnableInterrupt_eTimer0_InputCapture':
+../src/eTimer.c:89:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (NumCapture = 1) {
+  ^
+../src/eTimer.c:93:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  else if (NumCapture = 2) {
+  ^
+../src/eTimer.c: In function 'EnableInterrupt_eTimer1_InputCapture':
+../src/eTimer.c:105:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (NumCapture = 1) {
+  ^
+../src/eTimer.c:109:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  else if (NumCapture = 2) {
+  ^
+../src/eTimer.c: In function 'EnableInterrupt_eTimer2_InputCapture':
+../src/eTimer.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (NumCapture = 1) {
+  ^
+../src/eTimer.c:125:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+Building file: ../src/main.c
+  else if (NumCapture = 2) {
+  ^
+powerpc-eabivle-gcc "@src/intc_sw_handlers.args" -o "src/intc_sw_handlers.o" "../src/intc_sw_handlers.S"
+ 
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/flashrchw.c
+../src/gd3000.c: In function 'gd3000_initialization_procedure':
+../src/gd3000.c:180:10: warning: variable 'Read_Data' set but not used [-Wunused-but-set-variable]
+  uint8_t Read_Data;
+          ^
+../src/gd3000.c: In function 'gd3000_write_reg':
+../src/gd3000.c:268:10: warning: variable 'Read_Data' set but not used [-Wunused-but-set-variable]
+  uint8_t Read_Data;
+          ^
+../src/gd3000.c: In function 'gd3000_read_dummy':
+../src/gd3000.c:292:10: warning: variable 'Read_Data' set but not used [-Wunused-but-set-variable]
+  uint8_t Read_Data;
+          ^
+../src/gd3000.c: In function 'gd3000_Recovery_Fault':
+../src/gd3000.c:559:10: warning: variable 'Read_Data' set but not used [-Wunused-but-set-variable]
+  uint8_t Read_Data;
+          ^
+../src/gd3000.c: In function 'gd3000_Read_Status':
+../src/gd3000.c:589:10: warning: variable 'Read_Data' set but not used [-Wunused-but-set-variable]
+  uint8_t Read_Data;
+          ^
+Building file: ../src/modele_moteur_virtuel.c
+Finished building: ../src/User_Interface.c
+Finished building: ../src/intc_SW_mode_isr_vectors_MPC5744P.c
+Invoking: Standard S32DS C Compiler
+Finished building: ../src/UARTConfig.c
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/modele_moteur_virtuel.d" -MT"src/modele_moteur_virtuel.o" -o "src/modele_moteur_virtuel.o" "../src/modele_moteur_virtuel.c"
+ 
+ 
+ 
+Finished building: ../src/intc_sw_handlers.S
+Finished building: ../src/eTimer.c
+ 
+ 
+ 
+Building file: ../src/pga411.c
+../src/modele_moteur_virtuel.c: In function 'Get_Angle_Rotor_Virtuel':
+../src/modele_moteur_virtuel.c:162:46: warning: unused variable 'DQ_Out' [-Wunused-variable]
+  SWLIBS_2Syst_FLT CosSinOut,Ialpha_beta_meas,DQ_Out;
+                                              ^
+Finished building: ../src/gd3000.c
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@src/ClockConfig.args" -MMD -MP -MF"src/pga411.d" -MT"src/pga411.o" -o "src/pga411.o" "../src/pga411.c"
+Building file: ../Project_Settings/Startup_Code/startup.S
+ 
+Invoking: Standard S32DS Assembler
+Building file: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_platforms/MPC57xx/freemaster_MPC57xx.c
+Building file: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_appcmd.c
+Finished building: ../src/modele_moteur_virtuel.c
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@FreeMaster_MPC57xxx/src_common/freemaster_appcmd.args" -MMD -MP -MF"FreeMaster_MPC57xxx/src_common/freemaster_appcmd.d" -MT"FreeMaster_MPC57xxx/src_common/freemaster_appcmd.o" -o "FreeMaster_MPC57xxx/src_common/freemaster_appcmd.o" "C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_appcmd.c"
+Finished building: ../src/main.c
+ 
+powerpc-eabivle-gcc "@Project_Settings/Startup_Code/startup.args" -o "Project_Settings/Startup_Code/startup.o" "../Project_Settings/Startup_Code/startup.S"
+ 
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@FreeMaster_MPC57xxx/src_platforms/MPC57xx/freemaster_MPC57xx.args" -MMD -MP -MF"FreeMaster_MPC57xxx/src_platforms/MPC57xx/freemaster_MPC57xx.d" -MT"FreeMaster_MPC57xxx/src_platforms/MPC57xx/freemaster_MPC57xx.o" -o "FreeMaster_MPC57xxx/src_platforms/MPC57xx/freemaster_MPC57xx.o" "C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_platforms/MPC57xx/freemaster_MPC57xx.c"
+../src/pga411.c:176:1: warning: "/*" within comment [-Wcomment]
+Building file: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_bdm.c
+ /*****************************************************************************/
+ ^
+Building file: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_can.c
+../src/pga411.c: In function 'pga411_Config_Init':
+Invoking: Standard S32DS C Compiler
+../src/pga411.c:195:2: warning: statement with no effect [-Wunused-value]
+powerpc-eabivle-gcc "@FreeMaster_MPC57xxx/src_common/freemaster_bdm.args" -MMD -MP -MF"FreeMaster_MPC57xxx/src_common/freemaster_bdm.d" -MT"FreeMaster_MPC57xxx/src_common/freemaster_bdm.o" -o "FreeMaster_MPC57xxx/src_common/freemaster_bdm.o" "C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_bdm.c"
+  config_OK != PGA411_Status.PGA411_Failed;
+Invoking: Standard S32DS C Compiler
+  ^
+Building file: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_lin.c
+../src/pga411.c: In function 'pga411_XmitSPI':
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@FreeMaster_MPC57xxx/src_common/freemaster_lin.args" -MMD -MP -MF"FreeMaster_MPC57xxx/src_common/freemaster_lin.d" -MT"FreeMaster_MPC57xxx/src_common/freemaster_lin.o" -o "FreeMaster_MPC57xxx/src_common/freemaster_lin.o" "C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_lin.c"
+../src/pga411.c:344:11: warning: variable 'error_data' set but not used [-Wunused-but-set-variable]
+Finished building: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_appcmd.c
+Finished building: ../Project_Settings/Startup_Code/startup.S
+ 
+ 
+powerpc-eabivle-gcc "@FreeMaster_MPC57xxx/src_common/freemaster_can.args" -MMD -MP -MF"FreeMaster_MPC57xxx/src_common/freemaster_can.d" -MT"FreeMaster_MPC57xxx/src_common/freemaster_can.o" -o "FreeMaster_MPC57xxx/src_common/freemaster_can.o" "C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_can.c"
+  uint32_t error_data;
+Finished building: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_platforms/MPC57xx/freemaster_MPC57xx.c
+           ^
+Finished building: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_bdm.c
+ 
+Building file: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_pipes.c
+ 
+Finished building: ../src/pga411.c
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@FreeMaster_MPC57xxx/src_common/freemaster_pipes.args" -MMD -MP -MF"FreeMaster_MPC57xxx/src_common/freemaster_pipes.d" -MT"FreeMaster_MPC57xxx/src_common/freemaster_pipes.o" -o "FreeMaster_MPC57xxx/src_common/freemaster_pipes.o" "C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_pipes.c"
+Finished building: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_lin.c
+ 
+ 
+Building file: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_protocol.c
+Building file: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_rec.c
+Finished building: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_can.c
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@FreeMaster_MPC57xxx/src_common/freemaster_rec.args" -MMD -MP -MF"FreeMaster_MPC57xxx/src_common/freemaster_rec.d" -MT"FreeMaster_MPC57xxx/src_common/freemaster_rec.o" -o "FreeMaster_MPC57xxx/src_common/freemaster_rec.o" "C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_rec.c"
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@FreeMaster_MPC57xxx/src_common/freemaster_protocol.args" -MMD -MP -MF"FreeMaster_MPC57xxx/src_common/freemaster_protocol.d" -MT"FreeMaster_MPC57xxx/src_common/freemaster_protocol.o" -o "FreeMaster_MPC57xxx/src_common/freemaster_protocol.o" "C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_protocol.c"
+ 
+Building file: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_scope.c
+Building file: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_serial.c
+Building file: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_sfio.c
+Building file: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_tsa.c
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@FreeMaster_MPC57xxx/src_common/freemaster_scope.args" -MMD -MP -MF"FreeMaster_MPC57xxx/src_common/freemaster_scope.d" -MT"FreeMaster_MPC57xxx/src_common/freemaster_scope.o" -o "FreeMaster_MPC57xxx/src_common/freemaster_scope.o" "C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_scope.c"
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@FreeMaster_MPC57xxx/src_common/freemaster_serial.args" -MMD -MP -MF"FreeMaster_MPC57xxx/src_common/freemaster_serial.d" -MT"FreeMaster_MPC57xxx/src_common/freemaster_serial.o" -o "FreeMaster_MPC57xxx/src_common/freemaster_serial.o" "C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_serial.c"
+powerpc-eabivle-gcc "@FreeMaster_MPC57xxx/src_common/freemaster_tsa.args" -MMD -MP -MF"FreeMaster_MPC57xxx/src_common/freemaster_tsa.d" -MT"FreeMaster_MPC57xxx/src_common/freemaster_tsa.o" -o "FreeMaster_MPC57xxx/src_common/freemaster_tsa.o" "C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_tsa.c"
+Finished building: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_rec.c
+Finished building: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_protocol.c
+Invoking: Standard S32DS C Compiler
+powerpc-eabivle-gcc "@FreeMaster_MPC57xxx/src_common/freemaster_sfio.args" -MMD -MP -MF"FreeMaster_MPC57xxx/src_common/freemaster_sfio.d" -MT"FreeMaster_MPC57xxx/src_common/freemaster_sfio.o" -o "FreeMaster_MPC57xxx/src_common/freemaster_sfio.o" "C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_sfio.c"
+ 
+Finished building: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_pipes.c
+Finished building: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_scope.c
+Finished building: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_tsa.c
+ 
+ 
+ 
+ 
+Finished building: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_serial.c
+ 
+Finished building: C:/NXP/S32DS_Power_v2.1/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0/src_common/freemaster_sfio.c
+ 
+Building target: PMSM_TGN002_cde_Uf_etudiant.elf
+Invoking: Standard S32DS C++ Linker
+powerpc-eabivle-g++ -o "PMSM_TGN002_cde_Uf_etudiant.elf" "@PMSM_TGN002_cde_Uf_etudiant.args"    
+Finished building target: PMSM_TGN002_cde_Uf_etudiant.elf
+ 
+Invoking: Standard S32DS Print Size
+powerpc-eabivle-size --format=berkeley PMSM_TGN002_cde_Uf_etudiant.elf
+   text	   data	    bss	    dec	    hex	filename
+  56370	    276	   5568	  62214	   f306	PMSM_TGN002_cde_Uf_etudiant.elf
+Finished building: PMSM_TGN002_cde_Uf_etudiant.siz
+ 
